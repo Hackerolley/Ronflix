@@ -1,0 +1,73 @@
+
+[
+  {
+    "category": "Action",
+    "movie_title": "Edge of Vengeance",
+    "movie_meta": "2023 • 2h 10m • PG-13",
+    "isPopular": true,
+    "poster_image": "https://i.ibb.co/m0wXZgG/action1.jpg"
+  },
+  {
+    "category": "Love",
+    "movie_title": "Tears of Tomorrow",
+    "movie_meta": "2022 • 1h 50m • PG",
+    "isPopular": false,
+    "poster_image": "https://i.ibb.co/sKDXxg7/drama1.jpg"
+  },
+  {
+    "category": "education",
+    "movie_title": "Laugh Avenue",
+    "movie_meta": "2024 • 1h 35m • PG-13",
+    "isPopular": true,
+    "poster_image": "https://i.ibb.co/Gk9D5XM/comedy1.jpg"
+  },
+  {
+    "category": "Action",
+    "movie_title": "The Whispering Shadows",
+    "movie_meta": "2023 • 1h 45m • R",
+    "isPopular": true,
+    "poster_image": "https://i.ibb.co/ZcTvWL1/horror1.jpg"
+  },
+  {
+    "category": "Action",
+    "movie_title": "Silent Evidence",
+    "movie_meta": "2024 • 2h 5m • PG-13",
+    "isPopular": false,
+    "poster_image": "https://i.ibb.co/gTphDxr/thriller1.jpg"
+  },
+  {
+    "category": "Love",
+    "movie_title": "Love Unspoken",
+    "movie_meta": "2022 • 1h 55m • PG",
+    "isPopular": true,
+    "poster_image": "https://i.ibb.co/vzf4ZVH/romance1.jpg"
+  },
+  {
+    "category": "Drama",
+    "movie_title": "Beyond the Orbit",
+    "movie_meta": "2023 • 2h 20m • PG-13",
+    "isPopular": false,
+    "poster_image": "https://i.ibb.co/m6rN7ZJ/scifi1.jpg"
+  },
+  {
+    "category": "Drama",
+    "movie_title": "The Tiny Heroes",
+    "movie_meta": "2024 • 1h 40m • G",
+    "isPopular": true,
+    "poster_image": "https://i.ibb.co/k90Kxrb/animation1.jpg"
+  },
+  {
+    "category": "Islam",
+    "movie_title": "Lost in the Desert",
+    "movie_meta": "2023 • 2h 15m • PG-13",
+    "isPopular": false,
+    "poster_image": "https://i.ibb.co/v4prmDH/adventure1.jpg"
+  },
+  {
+    "category": "Islam",
+    "movie_title": "Crown of the Moon",
+    "movie_meta": "2024 • 2h 8m • PG-13",
+    "isPopular": true,
+    "poster_image": "https://i.ibb.co/X5dcFtL/fantasy1.jpg"
+  }
+]

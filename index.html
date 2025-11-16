@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Responsive Movie Grid — With Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="images/ronflixlogo trans.jpg" id="logo" alt="">
+
+      <div class="center-group">
+        <div class="search-group" role="search" aria-label="Search movies">
+          <input id="cityInput" placeholder="Search movies..." />
+          <button id="searchBtn">Search</button>
+        </div>
+
+        <section class="controls">
+          <label for="genre">Genre</label>
+          <select id="genre">
+            <option value="all">All</option>
+            <option value="action">Action</option>
+            <option value="drama">Drama</option>
+            <option value="love">Love</option>
+            <option value="edu">Education</option>
+            <option value="islam">Islam</option>
+          </select>
+
+          <label for="sort">Sort</label>
+          <select id="sort">
+            <option>Popular</option>
+            <option>Newest</option>
+          </select>
+        </section>
+      </div>
+
+      <!-- PROFILE CONTAINER (right-hand) -->
+      <div class="profile-container" title="User profile" aria-label="User profile">
+        <!-- replace src with user's avatar URL -->
+        <img class="profile-img" src="https://via.placeholder.com/150" alt="User avatar" />
+        <div class="profile-meta">
+          <span class="profile-name">Yaqub Yusuf</span>
+          <small class="profile-role">User</small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- advert section and hero section -->
+
+    <section class="hero-section">
+      <div class="hero-background"></div>
+      <div class="hero-content">
+        <h1 class="hero-title"></h1>
+        <p class="hero-description"></p>
+        <div class="hero-buttons">
+          <button class="play-btn">▶ Play</button>
+          <button class="info-btn">ℹ More Info</button>
+        </div>
+      </div>
+  </section>
+
+    <section class="movie-grid" aria-live="polite" id="movieList">
+      <!-- Example cards -->
+      <article class="movie-card">
+        <div class="poster">Poster</div>
+        <div class="movie-info">
+          <div class="category"></div>
+          <div class="isPopular"></div>
+          <h3 class="movie-title">Movie Title One</h3>
+          <p class="movie-meta">2025 • Action • 2h 10m</p>
+          <p class="movie-temp">Rating: ★★★★☆</p>
+        </div>
+      </article>
+
+      
+      <!-- Add more cards or render from JS -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© GyTech hub</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
