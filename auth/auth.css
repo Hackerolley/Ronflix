@@ -83,6 +83,7 @@ body{
 .auth-form .field{
   margin-bottom:12px
 }
+
 .auth-form input{
   width:100%;
   padding:14px;
@@ -147,9 +148,6 @@ body{
 
 /* Mobile styles */
 
-/* ===========================
-   RESPONSIVE STYLES — 767px
-   =========================== */
 @media (max-width: 767px) {
 
   /* Fullscreen container, always centered */
@@ -159,7 +157,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: auto;
     background: rgba(0, 0, 0, 0.65); /* transparent background */
     backdrop-filter: blur(3px);
   }
@@ -193,6 +191,9 @@ body{
     padding: 12px;
     font-size: 15px;
   }
+  .auth-form{
+  padding-top: 10px;
+}
 
   /* Button */
   .btn-primary {
