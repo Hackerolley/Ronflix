@@ -10,15 +10,17 @@
 }
 
 *{box-sizing:border-box}
-html,body{height:100%}
+html,body{
+  height:100%
+}
 body{
+  padding: none;
   margin:0;
   background: #000;
   color:#fff;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
 }
-
 /* Background hero (use gradients for fast mock) */
 .bg{
   position:fixed;
@@ -78,7 +80,9 @@ body{
 }
 
 /* form */
-.auth-form .field{margin-bottom:12px}
+.auth-form .field{
+  margin-bottom:12px
+}
 .auth-form input{
   width:100%;
   padding:14px;
@@ -89,7 +93,9 @@ body{
   font-size:15px;
   outline:none;
 }
-.auth-form input::placeholder{color:rgba(255,255,255,0.6)}
+.auth-form input::placeholder{
+  color:rgba(255,255,255,0.6)
+}
 
 .btn-primary{
   width:100%;
@@ -105,8 +111,12 @@ body{
   box-shadow: 0 8px 30px rgba(233,9,20,0.16);
 }
 
-.btn-primary:active{transform: translateY(0)}
-.btn-primary:hover{opacity:0.95}
+.btn-primary:active{
+  transform: translateY(0)
+}
+.btn-primary:hover{
+  opacity:0.95
+}
 
 /* helper row */
 .help-row{
@@ -117,10 +127,16 @@ body{
   color:var(--muted);
   font-size:14px;
 }
-.remember input{margin-right:8px}
+.remember input{
+  margin-right:8px
+}
 
 /* red small links */
-.small-link{color:var(--muted); text-decoration:underline; text-underline-offset:4px}
+.small-link{
+  color:var(--muted); 
+  text-decoration:underline; 
+  text-underline-offset:4px
+}
 
 /* redirect */
 .redirect{
@@ -129,8 +145,73 @@ body{
   font-size:14px;
 }
 
-/* responsive */
-@media(max-width:420px){
-  .auth-panel{padding:26px}
-  .auth-logo{width:48px;height:48px}
+/* Mobile styles */
+
+@media (max-width: 767px) {
+
+  /* Root container */
+  .auth-root {
+    padding: 20px;
+  }
+
+  /* Main panel */
+  .auth-panel {
+    width: 100%;
+    max-width: 95%;
+    padding: 28px 22px;
+    border-radius: 8px;
+  }
+
+  /* Logo */
+  .auth-logo {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  /* Heading */
+  .auth-panel h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  /* Input fields */
+  .auth-form .field input {
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+  /* Button */
+  .btn-primary {
+    padding: 12px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  /* Checkbox row — KEEP SIDE BY SIDE */
+  .help-row {
+    margin-top: 14px;
+  }
+
+  .help-row .remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;        /* prevent wrapping */
+    flex-wrap: nowrap;          /* force stay in one line */
+  }
+
+  .help-row .remember input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    flex-shrink: 0;             /* prevents checkbox from shrinking */
+  }
+
+  /* Redirect link */
+  .redirect {
+    font-size: 13px;
+  };
 }
