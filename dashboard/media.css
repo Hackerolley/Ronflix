@@ -1,0 +1,69 @@
+/* ------------ MOBILE VIEW ONLY ------------- */
+@media (max-width: 768px) {
+
+  /* Hide desktop grid */
+  #movieList {
+    display: none !important;
+  }
+
+  /* Section container */
+  .mobile-rows {
+    display: block;
+    padding: 10px;
+  }
+
+  .movie-row {
+    margin-bottom: 25px;
+  }
+
+  .row-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  /* NETFLIX horizontal scroll layout */
+  .mobile-row-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .mobile-row-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Netflix mini-poster cards */
+  .mobile-movie-card {
+    flex-shrink: 0;
+    width: 120px;      /* Netflix width */
+    height: 180px;     /* Netflix height */
+    border-radius: 8px;
+    overflow: hidden;
+    background: #111;
+    position: relative;
+    scroll-snap-align: start;
+    transition: transform 0.2s ease;
+  }
+
+  .mobile-movie-card:hover {
+    transform: scale(1.06);
+  }
+
+  .mobile-movie-card .poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+/* Desktop stays same */
+@media (min-width: 769px) {
+  .mobile-rows {
+    display: none !important;
+  }
+}

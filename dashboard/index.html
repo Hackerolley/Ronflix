@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Responsive Movie Grid — With Profile</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="media.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <img src="images/ronflixlogo trans.jpg" id="logo" alt="">
+      <img src="../images/ronflixlogo trans.jpg" id="logo" alt="">
 
       <div class="center-group">
         <div class="search-group" role="search" aria-label="Search movies">
@@ -36,7 +37,7 @@
         </section>
       </div>
 
-      <!-- PROFILE CONTAINER (right-hand) -->
+      <!-- PROFILE CONTAINER-->
       <div class="profile-container" title="User profile" aria-label="User profile">
         <!-- replace src with user's avatar URL -->
         <img class="profile-img" src="https://via.placeholder.com/150" alt="User avatar" />
@@ -64,27 +65,38 @@
   </section>
 
     <section class="movie-grid" aria-live="polite" id="movieList">
-      <!-- Example cards -->
-      <article class="movie-card">
-        <div class="poster">Poster</div>
-        <div class="movie-info">
-          <div class="category"></div>
-          <div class="isPopular"></div>
-          <h3 class="movie-title">Movie Title One</h3>
-          <p class="movie-meta">2025 • Action • 2h 10m</p>
-          <p class="movie-temp">Rating: ★★★★☆</p>
-        </div>
-      </article>
-
+      <!-- movie will display here from js -->
+    </section>
       
+
+    <!-- MOBILE ROWS (hidden on desktop) -->
+    <div class="mobile-rows">
+      <section class="movie-row">
+        <h2 class="row-title">Trending Now</h2>
+        <div class="mobile-row-scroll" id="trendingRow"></div>
+      </section>
+
+      <section class="movie-row">
+        <h2 class="row-title">Popular Movies</h2>
+        <div class="mobile-row-scroll" id="popularRow"></div>
+      </section>
+
+      <section class="movie-row">
+        <h2 class="row-title">Top Rated</h2>
+        <div class="mobile-row-scroll" id="topRatedRow"></div>
+      </section>
+    </div>
+
+
       <!-- Add more cards or render from JS -->
     </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container">© GyTech hub</div>
   </footer>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
